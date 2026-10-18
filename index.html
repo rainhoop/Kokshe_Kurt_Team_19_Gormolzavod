@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fcf8f3" />
+    <meta
+      name="description"
+      content="Көкшетаудың нағыз дәмі — түтіндетілген құрт. Акция әлі іске қосылмаған."
+    />
+    <title>Көкше Құрт — Нағыз Көкшетау дәмі</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement__spark">✳</span>
+      <span data-i18n="announcement">Көкшетаудың дәмі. Сенің мүмкіндігің.</span>
+      <a href="#register" data-i18n="announcementLink">Код енгізу <span>↗</span></a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Гормолзавод Көкшетау" data-aria-kk="Гормолзавод Көкшетау" data-aria-ru="Гормолзавод, Кокшетау">
+        <span class="brand__logo-wrap"><img src="assets/Гормолзавод логотип.png" data-alt="brandImageAlt" alt="Гормолзавод Көкшетау" /></span>
+        <span class="brand__copy"><strong data-i18n="brandName">Гормолзавод</strong><small data-i18n="since">1965 жылдан бері</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Мәзірді ашу" data-aria-kk="Мәзірді ашу" data-aria-ru="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Негізгі навигация" data-aria-kk="Негізгі навигация" data-aria-ru="Основная навигация">
+        <a href="#prizes" data-i18n="navPrizes">Жүлделер</a>
+        <a href="#product" data-i18n="navProduct">Құрт туралы</a>
+        <a href="#legal" data-i18n="navAbout">Біз туралы</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Тілді таңдау" data-aria-kk="Тілді таңдау" data-aria-ru="Выбор языка">
+          <button type="button" class="language-switch__button is-active" data-lang="kk" aria-pressed="true">KZ</button>
+          <span></span>
+          <button type="button" class="language-switch__button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <button class="button button--small button--blue" type="button" data-open-register data-i18n="headerCta">Код енгізу <span>↗</span></button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="hero__content">
+          <div class="eyebrow"><span class="eyebrow__dot"></span><span data-i18n="heroEyebrow">Көкшетаудан — шын жүректен</span></div>
+          <h1 data-i18n="heroTitle">Нағыз Көкшетау дәмі —<br /><span>құрттың шынайы</span><br />дәмін байқап көр!</h1>
+          <p class="hero__description" data-i18n="heroDescription">Түтіннің жұпар иісі, табиғи сүт протеині және қаптамадағы құпия код.</p>
+          <div class="hero__buttons">
+            <a class="button button--blue button--large" href="#register" data-open-register data-i18n="heroCta">Кодты тіркеу <span>↗</span></a>
+            <a class="text-link" href="#product"><span class="text-link__play">▶</span><span data-i18n="heroSecondary">Өнім туралы</span></a>
+          </div>
+        </div>
+        <div class="hero__art">
+          <div class="hero__image-frame"><img src="assets/hero_kurt_smoke.png" data-alt="heroImageAlt" alt="Ольха түтінімен ысталған табиғи құрт" /></div>
+        </div>
+        <div class="hero__bottom-line">
+          <span data-i18n="heroPrize"><span class="star">✳</span> ЖҮЛДЕ МЫСАЛДАРЫ</span>
+          <span class="hero__bottom-separator"></span>
+          <span data-i18n="heroHeritage">Көкшетау · Қазақстан</span>
+          <span class="hero__bottom-scroll"><span data-i18n="scroll">Төмен сырғыт</span> ↓</span>
+        </div>
+      </section>
+
+      <section class="code-strip" id="register">
+        <div class="code-strip__copy"><span class="section-kicker" data-i18n="codeKicker">ҚАПТАМАДАҒЫ ПРОМОКОД</span><h2 data-i18n="codeTitle">Қаптаманы аш.<br /><span>Құпия кодты енгіз.</span></h2></div>
+        <form class="quick-code" id="quick-code-form">
+          <label for="quick-code" data-i18n="quickCodeLabel">Қаптамадағы промокод</label>
+          <div class="quick-code__input"><span class="quick-code__icon">✳</span><input id="quick-code" name="promoCode" maxlength="20" autocomplete="off" placeholder="KOKSHE-XXXX" />          <button type="submit" aria-label="Кодты енгізу" data-aria-kk="Кодты енгізу" data-aria-ru="Ввести код">↗</button></div>
+          <p data-i18n="quickCodeHint">Код қаптаманың ішіндегі промо-аймақта орналасқан.</p>
+          <p class="campaign-notice" data-i18n="campaignNotice">Акция әлі басталған жоқ. Код тексерілмейді, ал формаға енгізілген деректер осы браузерде ғана сақталады және қатысуды растамайды.</p>
+        </form>
+      </section>
+
+      <section class="product-section section-shell" id="product">
+        <div class="section-heading">
+          <div><span class="section-kicker" data-i18n="productKicker">ТАБИҒИ ДӘМ. ШЫНДЫҚ ДӘСТҮР.</span><h2 data-i18n="productTitle">Көкшетаудың <span>өз дәмі.</span></h2></div>
+          <p data-i18n="productIntro">1965 жылдан бері сүт өнімдерінің шынайы дәмін сақтап келеміз. Енді ол — жеңіл де тойымды тіскебасар.</p>
+        </div>
+        <div class="product-showcase">
+          <div class="product-showcase__visual">
+            <div class="pack-stage"><span class="pack-stage__label" data-i18n="packLabel">150 г · ысталған құрт</span><img id="pack-image" src="assets/передняя.png" alt="Көкше Құрт орамасының алдыңғы беті" /><button class="pack-stage__zoom" type="button" data-i18n="packZoom" data-aria-kk="Қаптаманы үлкейтіп қарау" data-aria-ru="Увеличить упаковку">⌕ Үлкейту</button></div>
+            <div class="pack-switch"><span data-i18n="packView">Қаптама көрінісі</span><div><button type="button" class="pack-switch__button is-active" data-pack="front" data-i18n="packFront">Алдыңғы беті</button><button type="button" class="pack-switch__button" data-pack="back" data-i18n="packBack">Артқы беті</button></div></div>
+          </div>
+          <div class="product-showcase__details">
+            <span class="product-index" data-i18n="productIndex">01 — ДӘМІ</span>
+            <h3 data-i18n="productDescTitle">Дала мінезі.<br /><span>Шағын формат.</span></h3>
+            <p data-i18n="productDesc">Сүттен жасалған құртты табиғи ольха жаңқасымен ыстаймыз. Артық қоспасыз, алып жүруге ыңғайлы дой-пакта.</p>
+            <ul class="fact-list">
+              <li><span>01</span><span data-i18n="factProtein"><strong>60 г протеин</strong> — әр 100 грамында</span><b>↗</b></li>
+              <li><span>02</span><span data-i18n="factSmoke"><strong>Табиғи ыстау</strong> — ольха жаңқасында</span><b>↗</b></li>
+              <li><span>03</span><span data-i18n="factRecipe"><strong>Қарапайым құрам</strong> — майсыз сүзбе, тұз</span><b>↗</b></li>
+              <li><span>04</span><span data-i18n="factPack"><strong>Мөлдір терезе</strong> — Көкшетау таулары пішінінде</span><b>↗</b></li>
+            </ul>
+            <a class="text-link text-link--blue" href="#quality"><span data-i18n="qualityLink">Сапасы туралы толығырақ</span><span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quality-section" id="quality">
+        <div class="quality-section__image"><img src="assets/kurt_macro_texture.png" data-alt="qualityImageAlt" alt="Табиғи ысталған құрттың макро-текстурасы" /><div class="quality-section__image-note"><span>100%</span><span data-i18n="qualityNote">қарапайым құрам.<br />шынайы дәм.</span></div></div>
+        <div class="quality-section__body"><span class="section-kicker" data-i18n="qualityKicker">БІЗ ҮШІН МАҢЫЗДЫ</span><h2 data-i18n="qualityTitle">Жақсы дәм —<br /><span>таза таңдаудан.</span></h2><div class="quality-item"><span class="quality-item__number">01</span><div><h3 data-i18n="qualityOneTitle">Мол сүт протеині</h3><p data-i18n="qualityOneText">100 граммында 60 г сүт протеині. Шайға да, жаттығудан кейін де жарасады.</p></div></div><div class="quality-item"><span class="quality-item__number">02</span><div><h3 data-i18n="qualityTwoTitle">Ольханың жұмсақ түтіні</h3><p data-i18n="qualityTwoText">Табиғи ағаш жаңқасында ысталған. Бояғыш қоспасыз.</p></div></div><div class="quality-item"><span class="quality-item__number">03</span><div><h3 data-i18n="qualityThreeTitle">Қысқа әрі түсінікті құрам</h3><p data-i18n="qualityThreeText">Майсыз сүзбе мен ас тұзы. Консервантсыз және ГМО-сыз.</p></div></div><div class="quality-origin"><img src="assets/burabay_story_photo.png.jpg" data-alt="storyImageAlt" alt="Бурабай ұлттық паркінің көрінісі" /><span><strong data-i18n="originTitle">Көкшетау, 1965 жылдан</strong><small data-i18n="originText">Бір өңірдің табиғаты. Бір отбасының дәстүрі.</small></span><span class="quality-origin__arrow">↗</span></div></div>
+      </section>
+
+      <section class="prizes-section" id="prizes">
+        <div class="section-shell">
+          <div class="section-heading section-heading--prizes"><div><span class="section-kicker" data-i18n="prizesKicker">СЕНІҢ КОДЫҢНЫҢ МӘНІ БАР</span><h2 data-i18n="prizesTitle">Сыйлық <span>мысалдары.</span></h2></div><p data-i18n="prizesIntro">Апталық және бас жүлделердің көрнекі мысалдары ғана. Бұлар ресми акция шарттары емес.</p></div>
+          <div class="prizes-layout"><div class="prizes-image"><img src="assets/prizes_showcase.png" data-alt="prizesImageAlt" alt="Жүлделердің тұжырымдамалық макеті: сыйлық мысалдары" /><div class="prizes-image__badge"><span data-i18n="prizeBadge">ЖҮЛДЕЛЕРДІҢ ТҰЖЫРЫМДАМАЛЫҚ МЫСАЛДАРЫ</span></div></div>
+            <div class="prize-list"><article class="prize-card prize-card--featured"><span class="prize-card__tag" data-i18n="superPrize">БАС ЖҮЛДЕ МЫСАЛЫ · 01</span><h3 data-i18n="tripPrize">Бурабайға саяхат</h3><p data-i18n="tripPrizeDesc">Тек сыйлық мысалы; ресми жүлде емес.</p><span class="prize-card__icon">↗</span></article><article class="prize-card"><span class="prize-card__tag" data-i18n="superPrizeTwo">БАС ЖҮЛДЕ МЫСАЛЫ · 02</span><h3 data-i18n="phonePrize">Смартфон</h3><p data-i18n="phonePrizeDesc">Тек сыйлық мысалы; ресми жүлде емес.</p><span class="prize-card__icon">↗</span></article><article class="prize-card prize-card--weekly"><span class="prize-card__tag" data-i18n="weeklyPrize">АПТАЛЫҚ МЫСАЛ</span><h3 data-i18n="weeklyTitle">Құрт және фирмалық мерч</h3><p data-i18n="weeklyDesc">Тек сыйлық мысалы; ресми жүлде емес.</p><span class="prize-card__icon">✳</span></article></div></div>
+          <div class="prizes-bottom"><span data-i18n="prizeFinePrint">Нақты жүлделер мен ұтыс шарттары акция ережелерінде.</span><a href="#legal" data-i18n="prizeRules">Акция ережелері ↗</a></div>
+        </div>
+      </section>
+
+      <section class="story-section"><div class="story-section__image"><img src="assets/burabay_story_photo.png.jpg" data-alt="storyImageAlt" alt="Бурабай ұлттық паркінің көрінісі" /></div><div class="story-section__text"><span class="section-kicker" data-i18n="storyKicker">БІР ӨҢІР. БІР ДӘСТҮР.</span><h2 data-i18n="storyTitle">Таудың таза ауасы.<br /><span>Дәмге айналған дәстүр.</span></h2><p data-i18n="storyText">Көкшетаудың сұлулығы мен шеберлердің тәжірибесі әр қаптамада тоғысады. 1965 жылдан бері — сүтке деген адалдық, сапаға деген құрмет.</p><div class="story-signature"><span class="story-signature__year">1965</span><span data-i18n="storySign">Көкшетау қаласы<br />Ақмола облысы</span><span class="story-signature__mark" data-i18n="countryMark">KZ<br />↗</span></div></div></section>
+
+      <section class="community-section">      <div class="community-photo"><img src="assets/community_kurt_moment.png.jpg" data-alt="communityImageAlt" alt="Достармен бөлісуге арналған Көкше Құрт" /></div><div class="community-card"><span class="community-card__quote">“</span><span class="section-kicker" data-i18n="communityKicker">БІЗДІҢ ӘҢГІМЕМІЗ — ОРТАҚ</span><h2 data-i18n="communityTitle">Кішкентай тіскебасар.<br /><span>Үлкен естелік.</span></h2><p data-i18n="communityText">Жолда, сабақта, серуенде — құрт әр сәтке жарасады. Біздің дәмді татып көр де, өз оқиғаңды бөліс.</p><a href="https://instagram.com/gormolzavod" target="_blank" rel="noreferrer" class="social-link"><span>@gormolzavod</span><span data-i18n="socialCta">Instagram-да бізге қосыл ↗</span></a></div></section>
+    </main>
+
+    <footer class="site-footer" id="legal"><div class="footer-main"><div class="footer-brand"><a class="brand brand--footer" href="#top" aria-label="Гормолзавод Көкшетау" data-aria-kk="Гормолзавод Көкшетау" data-aria-ru="Гормолзавод, Кокшетау"><span class="brand__logo-wrap"><img src="assets/Гормолзавод логотип.png" data-alt="brandImageAlt" alt="Гормолзавод Көкшетау" /></span><span class="brand__copy"><strong data-i18n="brandName">Гормолзавод</strong><small data-i18n="since">1965 жылдан бері</small></span></a><p data-i18n="footerBrandText">Көкшетаудан шынайы дәм. Жақындарыңа деген ықыласпен.</p><a href="https://instagram.com/gormolzavod" target="_blank" rel="noreferrer" class="footer-social">@gormolzavod ↗</a></div>
+        <div class="footer-column"><strong data-i18n="footerExplore">ЗЕРТТЕ</strong><a href="#prizes" data-i18n="navPrizes">Жүлделер</a><a href="#product" data-i18n="navProduct">Құрт туралы</a></div>        <div class="footer-column footer-column--address"><strong data-i18n="footerContact">БАЙЛАНЫС</strong><span data-i18n="companyName">«Гормолзавод» ЖШС</span><span data-i18n="address">Қазақстан, 020000, Ақмола облысы,<br />Көкшетау, Шығыс өнеркәсіп аймағы,<br />20-өтпе жол, 8в</span><a href="tel:+77473771529">+7 747 377 15 29</a><a href="tel:+77162771529">+7 7162 77 15 29</a><a href="mailto:ok@gormolzavod.kz">ok@gormolzavod.kz</a></div>
+        <div class="footer-rules"><strong data-i18n="footerRules">ҚҰЖАТТАР</strong><a href="#rules" data-i18n="rulesLink">Акция ережелері ↗</a><a href="#privacy" data-i18n="privacyLink">Деректерді өңдеу саясаты ↗</a><span data-i18n="footerStandards">Өнім стандарты</span><div class="certifications"><span>EAC</span><span>KZ</span><span>TP TC<br />022/2011</span><span>TP TC<br />033/2013</span></div></div>
+      </div><div class="footer-bottom"><span data-i18n="copyright">© 2026 «Гормолзавод» ЖШС, Көкшетау</span><span data-i18n="footerDisclaimer">Ресми акция ережелері жарияланбаған.</span><a href="#top" data-i18n="backTop">Жоғары ↑</a></div></footer>
+
+    <dialog class="pack-zoom" id="pack-zoom" aria-label="Қаптаманы үлкейтіп қарау" data-aria-kk="Қаптаманы үлкейтіп қарау" data-aria-ru="Увеличенный вид упаковки"><button class="pack-zoom__close" type="button" aria-label="Жабу" data-aria-kk="Жабу" data-aria-ru="Закрыть">×</button><img id="pack-zoom-image" src="assets/передняя.png" alt="Көкше Құрт орамасының алдыңғы беті" /></dialog>
+    <dialog class="register-modal" id="register-modal" aria-labelledby="modal-title"><div class="modal-card"><button class="modal-close" type="button" aria-label="Жабу" data-aria-kk="Жабу" data-aria-ru="Закрыть">×</button><div class="modal-card__intro"><span class="section-kicker" data-i18n="modalKicker">АКЦИЯ ТУРАЛЫ АҚПАРАТ</span><h2 id="modal-title" data-i18n="modalTitle">Акция әлі <span>басталған жоқ.</span></h2><p data-i18n="modalIntro">Қатысу шарттары мен деректерді өңдеу тәртібі ресми акция басталғанда жарияланады.</p></div>
+      <form id="register-form" class="register-form"><div class="field field--full"><label for="full-name" data-i18n="fieldName">Аты-жөнің</label><input id="full-name" name="fullName" autocomplete="name" required minlength="2" data-placeholder="namePlaceholder" placeholder="Мысалы, Айдана Қасымова" /></div><div class="field"><label for="phone" data-i18n="fieldPhone">Телефон нөмірі</label><input id="phone" name="phone" autocomplete="tel" type="tel" required inputmode="tel" placeholder="+7 (___) ___-__-__" /></div><div class="field"><label for="city" data-i18n="fieldCity">Қала</label><select id="city" name="city" required><option value="" data-i18n="cityPlaceholder">Қалаңды таңда</option><option value="kokshetau" data-i18n="cityKokshetau">Көкшетау</option><option value="astana" data-i18n="cityAstana">Астана</option><option value="almaty" data-i18n="cityAlmaty">Алматы</option><option value="shymkent" data-i18n="cityShymkent">Шымкент</option><option value="karaganda" data-i18n="cityKaraganda">Қарағанды</option><option value="aktobe" data-i18n="cityAktobe">Ақтөбе</option><option value="pavlodar" data-i18n="cityPavlodar">Павлодар</option><option value="kostanay" data-i18n="cityKostanay">Қостанай</option><option value="oskemen" data-i18n="cityOskemen">Өскемен</option><option value="taraz" data-i18n="cityTaraz">Тараз</option><option value="other" data-i18n="cityOther">Басқа қала</option></select></div><div class="field"><label for="age" data-i18n="fieldAge">Жас тобы</label><select id="age" name="age" required><option value="" data-i18n="agePlaceholder">Жасты таңда</option><option data-i18n="ageUnder18">18-ге дейін</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45+</option></select></div><div class="field"><label for="promo-code" data-i18n="fieldCode">Қаптамадағы промокод</label><input id="promo-code" name="promoCode" required maxlength="20" autocomplete="off" placeholder="KOKSHE-XXXX" /></div>
+      <label class="consent field--full"><input type="checkbox" name="consent" required /><span data-i18n="consentText">Аты-жөнім, қалам және жас тобым осы браузерде сақталатынына келісемін. Бұл мәліметтер акцияға қатысуды тіркемейді.</span></label><p class="privacy-hint field--full" data-i18n="privacyHint">Акция іске қосылмаған. Енгізілген ақпарат тек осы браузерде сақталады, код тексерілмейді.</p><button class="button button--blue button--large register-submit field--full" type="submit" data-i18n="submitRegister">Мәліметтерді сақтау <span>↗</span></button><div class="form-feedback field--full" role="status" aria-live="polite"></div></form><div class="modal-success" hidden><span>✓</span><h3 data-i18n="successTitle">Мәліметтер сақталды</h3><p data-i18n="successText">Ақпарат осы браузерде ғана сақталды. Акцияға қатысу тіркелмеді.</p><button class="button button--blue" type="button" data-success-close data-i18n="successClose">Түсінікті</button></div></div></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
